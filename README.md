@@ -1,11 +1,11 @@
-**Projeto Pousada - Padrões de Projeto**
+# Pousada - Padrões de Projeto
 
 Este é um projeto de exemplo para a disciplina de Padrões de Projeto, com foco na implementação de uma aplicação para gerenciar uma pousada. O objetivo é demonstrar a aplicação de diferentes padrões de projeto em um contexto prático.
 
-#Descrição do Projeto
+# Descrição do Projeto 
 O projeto consiste em um sistema para gerenciar uma pousada, com funcionalidades como cadastro de hóspedes, reserva de quartos e consulta de disponibilidade. Ele é desenvolvido em Java e utiliza padrões de projeto para promover uma estrutura de código mais flexível, modular e de fácil manutenção.
 
-#Funcionalidades
+# Funcionalidades 
 O sistema da pousada oferece as seguintes funcionalidades principais:
 
 Cadastro de hóspedes: permite cadastrar os dados dos hóspedes, como nome, CPF e idade.
@@ -20,7 +20,7 @@ Singleton: aplicado na classe responsável pelo gerenciamento da pousada, garant
 Observer: utilizado para notificar os hóspedes sobre a disponibilidade de quartos e atualizações nas reservas.
 Builder: empregado na construção de objetos complexos, como os dados de um hóspede, permitindo a criação passo a passo com diferentes opções configuráveis.
 
-#Estrutura do Projeto
+# Estrutura de Projetos 
 A estrutura do projeto está organizada da seguinte forma:
 src/: diretório principal do código-fonte
 Main.java: classe principal da aplicação.
