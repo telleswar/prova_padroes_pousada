@@ -4,6 +4,10 @@ public abstract class Quarto {
     private Integer capacidade;
     private Hospede hospede;
 
+    public Quarto(QuartoType tipo){
+        this.tipo = tipo;
+    }
+
     public Quarto(String numero, QuartoType tipo, Integer capacidade, Hospede hospede) {
         this.numero = numero;
         this.tipo = tipo;
