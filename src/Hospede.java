@@ -3,6 +3,9 @@ public class Hospede {
     private String cpf;
     private String contato;
 
+    public Hospede(){
+
+    }
     public Hospede(String nome, String cpf, String contato) {
         this.nome = nome;
         this.cpf = cpf;

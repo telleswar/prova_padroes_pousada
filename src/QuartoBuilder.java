@@ -15,4 +15,7 @@ public abstract class QuartoBuilder {
         this.quarto.setHospede(hospede);
         return this;
     }
+    public Quarto build(){
+        return this.quarto;
+    }
 }
