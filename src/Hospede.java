@@ -1,12 +1,13 @@
+package org.example;
+
 public class Hospede {
     private String nome;
     private String cpf;
-    private String telefone;
+    private String contato;
 
-    public Hospede(String nome, String cpf, String telefone) {
+    public Hospede(String nome, String cpf, String contato) {
         this.nome = nome;
         this.cpf = cpf;
-        this.telefone = telefone;
     }
 
     public String getNome() {
@@ -25,6 +26,11 @@ public class Hospede {
         this.cpf = cpf;
     }
 
+    public String getContato() {
+        return contato;
+    }
 
-
+    public void setContato(String contato) {
+        this.contato = contato;
+    }
 }
