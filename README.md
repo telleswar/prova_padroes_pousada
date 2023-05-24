@@ -6,7 +6,7 @@ Este é um projeto de exemplo para a disciplina de Padrões de Projeto, com foco
 O projeto consiste em um sistema para gerenciar uma pousada, com funcionalidades como cadastro de hóspedes, reserva de quartos e consulta de disponibilidade. Ele é desenvolvido em Java e utiliza padrões de projeto para promover uma estrutura de código mais flexível, modular e de fácil manutenção.
 
 # Funcionalidades 
-**O sistema da pousada oferece as seguintes funcionalidades principais:
+**O sistema da pousada oferece as seguintes funcionalidades principais:**
 
 Cadastro de hóspedes: permite cadastrar os dados dos hóspedes, como nome, CPF e idade.
 Reserva de quartos: possibilita a reserva de quartos para os hóspedes, considerando a disponibilidade e características dos quartos.
