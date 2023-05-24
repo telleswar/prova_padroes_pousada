@@ -21,7 +21,7 @@ public class PousadaController {
         return instance;
     }
 
-    public void checkIn(Hospede hospede) {
+    public void cadastrar(Hospede hospede) {
         if (buscarPorCPF(hospede.getCpf()) == null) {
             hospedes.add(hospede);
             System.out.println("Hospede cadastrado com sucesso: " + hospede.getCpf());
