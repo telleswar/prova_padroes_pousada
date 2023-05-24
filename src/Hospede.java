@@ -1,5 +1,3 @@
-package org.example;
-
 public class Hospede {
     private String nome;
     private String cpf;
