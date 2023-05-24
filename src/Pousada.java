@@ -5,6 +5,7 @@ public class Pousada {
     private String nome;
     private String endereco;
     private List<Quarto> quartos;
+    private List<Hospede> hospedes;
 
     public Pousada(String nome, String endereco) {
         this.nome = nome;
@@ -39,4 +40,12 @@ public class Pousada {
     public List<Quarto> getQuartos() {
         return quartos;
     }
+
+    public void adicionarHospede(Hospede hospede) {
+        hospedes.add(hospede);
+    }
+
+
+
+
 }
