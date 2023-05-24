@@ -5,4 +5,7 @@ public class Main {
         System.out.println(QuartoType.Luxo.getAdicionais());
     }
 
+    public abstract static class QuartoBuilder {
+        Quarto
+    }
 }
