@@ -6,6 +6,9 @@ public class Main {
     }
 
     public abstract static class QuartoBuilder {
-        Quarto
+
+        //- arrumar a classe pousada
+        //- criar o main (criar o registros)
+        //- factory da classe quarto
     }
 }
