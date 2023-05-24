@@ -6,6 +6,7 @@ public class Hospede {
     public Hospede(String nome, String cpf, String contato) {
         this.nome = nome;
         this.cpf = cpf;
+        this.contato = contato;
     }
 
     public String getNome() {
