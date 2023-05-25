@@ -35,4 +35,12 @@ public class Hospede {
     public void setContato(String contato) {
         this.contato = contato;
     }
+
+    @Override
+    public String toString() {
+        return  nome +
+                "\n > Cpf: " + cpf +
+                "\n > Contato: " + contato +
+                "\n";
+    }
 }

@@ -10,7 +10,8 @@ public class Pousada {
     private List<Hospede> hospedes;
 
     private Pousada() {
-
+        this.quartos = new ArrayList<>();
+        this.hospedes = new ArrayList<>();
     }
     public static Pousada getInstance(){
         if (instance == null){
@@ -55,12 +56,16 @@ public class Pousada {
         hospedes.add(hospede);
     }
 
-    public List<Hospede> getHspede() {
+    public List<Hospede> getHospedes() {
         return hospedes;
     }
 
     public String getContado() {
         return contado;
+    }
+
+    public Integer getQuatidadeQuartos(){
+        return quartos.size();
     }
 
     public void setContado(String contado) {

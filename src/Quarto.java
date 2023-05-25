@@ -46,4 +46,13 @@ public abstract class Quarto {
     public void setHospede(Hospede hospede) {
         this.hospede = hospede;
     }
+
+    @Override
+    public String toString() {
+        return this.tipo.toString() + " | " + this.numero +
+                "\n > Capacidade: " + this.capacidade +
+                "\n > Adicionais: " + this.tipo.getAdicionais() +
+                "\n > Hospede: " + (this.hospede == null ? "*livre": this.hospede.getNome()) +
+                "\n";
+    }
 }
