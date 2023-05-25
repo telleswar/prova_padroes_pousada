@@ -22,6 +22,19 @@ public class Main {
         }
         System.out.println("A pousada tem " + pousada.getQuatidadeQuartos() + " quartos.");
 
+        pousada.checkIn("103.444.555-88", "L1");
+
+        pousada.checkIn("103.444.555-77", "S1");
+
+        pousada.checkIn("103.444.555-99", "S1");
+
+        pousada.checkIn("103.444.555-99", "L3");
+
+        //Listando Quartos
+        System.out.println("\n[*]Quartos\n");
+        for (Quarto q: pousada.getQuartos()) {
+            System.out.println(q.toString());
+        }
 
 
     }
