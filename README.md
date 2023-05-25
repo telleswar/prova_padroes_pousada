@@ -1,3 +1,8 @@
+Alunos: 
+Leandro João Marqueti - 202010005789,
+Antony Rairon da Silva Moreira - 202010005390,
+Eduardo Antônio Raimundo de Souza - 202010005786
+
 # Pousada - Padrões de Projeto
 
 Este é um projeto de exemplo para a disciplina de Padrões de Projeto, com foco na implementação de uma aplicação para gerenciar uma pousada. O objetivo é demonstrar a aplicação de diferentes padrões de projeto em um contexto prático.
