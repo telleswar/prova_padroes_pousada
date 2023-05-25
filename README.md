@@ -1,6 +1,6 @@
 Alunos: 
-Leandro João Marqueti - 202010005789
-Antony Rairon da Silva Moreira - 202010005390
+Leandro João Marqueti - 202010005789,
+Antony Rairon da Silva Moreira - 202010005390,
 Eduardo Antônio Raimundo de Souza - 202010005786
 
 # Pousada - Padrões de Projeto
