@@ -2,15 +2,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Pousada {
+    private static Pousada instance;
     private String nome;
     private String endereco;
+    private String contado;
     private List<Quarto> quartos;
     private List<Hospede> hospedes;
 
-    public Pousada(String nome, String endereco) {
-        this.nome = nome;
-        this.endereco = endereco;
-        this.quartos = new ArrayList<>();
+    private Pousada() {
+
+    }
+    public static Pousada getInstance(){
+        if (instance == null){
+            instance = new Pousada();
+        }
+        return instance;
     }
 
     public String getNome() {
@@ -45,7 +51,58 @@ public class Pousada {
         hospedes.add(hospede);
     }
 
+    public void removerHospede(Hospede hospede) {
+        hospedes.add(hospede);
+    }
 
+    public List<Hospede> getHspede() {
+        return hospedes;
+    }
+
+    public String getContado() {
+        return contado;
+    }
+
+    public void setContado(String contado) {
+        this.contado = contado;
+    }
+
+    public Hospede getHospedeByCpf(String cpf){
+        for (Hospede h: this.hospedes) {
+            if(h.getCpf().equals(cpf)){
+                return h;
+            }
+        }
+        return  null;
+    }
+
+    public Quarto getQuartoByNumero(String numero){
+        for (Quarto q: this.quartos) {
+            if(q.getNumero().equals(numero)){
+                return q;
+            }
+        }
+        return  null;
+    }
+
+    public Boolean checkIn (String cpf, String numero){
+        Hospede hospede = getHospedeByCpf(cpf);
+        Quarto quarto = getQuartoByNumero(numero);
+        if (hospede == null || quarto ==  null){
+            System.out.println("Hospede e/ou quarto invalidos.");
+            return false;
+        }
+
+        if (quarto.getHospede() != null){
+            System.out.println("Quarto ocupado por outro hospede(cpf: " + hospede.getCpf()+").");
+            return false;
+        }
+
+        quarto.setHospede(hospede);
+        System.out.println("O quarto numero: " + quarto.getNumero() + " foi registrado para o hospede cpf: " + hospede.getCpf());
+
+        return true;
+    }
 
 
 }

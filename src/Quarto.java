@@ -4,7 +4,7 @@ public abstract class Quarto {
     private Integer capacidade;
     private Hospede hospede;
 
-    public Quarto(QuartoType tipo){
+    protected Quarto(QuartoType tipo){
         this.tipo = tipo;
     }
 

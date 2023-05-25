@@ -2,13 +2,10 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        System.out.println(QuartoType.Luxo.getAdicionais());
+        Pousada pousada = Pousada.getInstance();
+        pousada.setNome("Pousada do São João");
+        pousada.setEndereco("Rua teste, 123");
+
     }
 
-    public abstract static class QuartoBuilder {
-
-        //- arrumar a classe pousada
-        //- criar o main (criar o registros)
-        //- factory da classe quarto
-    }
 }
