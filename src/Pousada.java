@@ -99,7 +99,7 @@ public class Pousada {
         }
 
         if (quarto.getHospede() != null){
-            System.out.println("Quarto "+quarto.getNumero()+" ocupado pelo hospede(cpf: " + hospede.getCpf()+") e não esta disponivel no momento.");
+            System.out.println("Quarto "+quarto.getNumero()+" ocupado pelo hospede(cpf: " + quarto.getHospede().getCpf()+") e não esta disponivel no momento.");
             return false;
         }
 
